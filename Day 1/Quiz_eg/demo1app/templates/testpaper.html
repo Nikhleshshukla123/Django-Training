@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Testpaper</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+div {
+    margin: 20px;
+}
+
+/* Container for questions and answers */
+.question-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for questions */
+.question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style for answer options */
+.answer-option {
+    margin: 10px 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.answer-option input {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .question-container {
+        padding: 15px;
+    }
+
+    .answer-option {
+        font-size: 0.9em;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div>{{que1}}</div>
+        
+        <div>
+            <div><input type="radio" name="answer">{{a1}}</div>
+            <div><input type="radio" name="answer">{{b1}}</div>
+            <div><input type="radio" name="answer">{{c1}}</div>
+            <div><input type="radio" name="answer">{{d1}}</div>
+        </div>
+        
+        <div>{{que2}}</div>
+        <div>
+            <div><input type="radio" name="answer">{{a2}}</div>
+            <div><input type="radio" name="answer">{{b2}}</div>
+            <div><input type="radio" name="answer">{{c2}}</div>
+            <div><input type="radio" name="answer">{{d2}}</div>
+        </div>
+        
+        <div>{{que3}}</div>
+        <div>
+            <div><input type="radio" name="answer">{{a3}}</div>
+            <div><input type="radio" name="answer">{{b3}}</div>
+            <div><input type="radio" name="answer">{{c3}}</div>
+            <div><input type="radio" name="answer">{{d3}}</div>
+        </div>
+        
+        <div>{{que4}}</div>
+        <div>
+            <div><input type="radio" name="answer">{{a4}}</div>
+            <div><input type="radio" name="answer">{{b4}}</div>
+            <div><input type="radio" name="answer">{{c4}}</div>
+            <div><input type="radio" name="answer">{{d4}}</div>
+        </div>
+
+        <div>{{que5}}</div>
+        <div>
+            <div><input type="radio" name="answer">{{a5}}</div>
+            <div><input type="radio" name="answer">{{b5}}</div>
+            <div><input type="radio" name="answer">{{c5}}</div>
+            <div><input type="radio" name="answer">{{d5}}</div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
