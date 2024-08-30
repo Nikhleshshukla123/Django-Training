@@ -63,16 +63,35 @@ div {
         </style>
     </head>
     <body>
-        <div>{{que1}}</div>
+{% comment %} This code is for Template Filters {% endcomment %}
+        <div>{{que | upper}}</div>
+        
+        <div>
+            {% for option in options %}
+            <div><input type="radio" name="answer">{{option}}</div>
+            {% endfor %}
+        </div>
+
+{% comment %} This code is for Template Tag {% endcomment %}
+        {% comment %} <div>{{que}}</div>
+        
+        <div>
+            {% for option in options %}
+            <div><input type="radio" name="answer">{{option}}</div>
+            {% endfor %}
+        </div> {% endcomment %}
+
+{% comment %} This code for Template Variable {% endcomment %}
+        {% comment %} <div>{{que1}}</div>
         
         <div>
             <div><input type="radio" name="answer">{{a1}}</div>
             <div><input type="radio" name="answer">{{b1}}</div>
             <div><input type="radio" name="answer">{{c1}}</div>
             <div><input type="radio" name="answer">{{d1}}</div>
-        </div>
+        </div> {% endcomment %}
         
-        <div>{{que2}}</div>
+        {% comment %} <div>{{que2}}</div>
         <div>
             <div><input type="radio" name="answer">{{a2}}</div>
             <div><input type="radio" name="answer">{{b2}}</div>
@@ -102,7 +121,7 @@ div {
             <div><input type="radio" name="answer">{{b5}}</div>
             <div><input type="radio" name="answer">{{c5}}</div>
             <div><input type="radio" name="answer">{{d5}}</div>
-        </div>
+        </div> {% endcomment %}
         <script src="" async defer></script>
     </body>
 </html>

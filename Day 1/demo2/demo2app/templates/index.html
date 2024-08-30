@@ -1,0 +1,20 @@
+<html>
+    {% load static%}
+    <head>
+        <title>My-Site</title>
+    </head>
+        <body>
+            <h1 style="color: navy; font-family: Arial, sans-serif; font-size: 36px; text-align: center; font-weight: bold; margin-top: 20px;">
+                Sagar Group of Institutions
+            </h1>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="{% static 'sistec.jpg' %}" alt="Sagar Group of Institutions" style="max-width: 100%; height: auto;">
+            </div>
+
+            {% block content %}
+            <h1>This is master page</h1>
+            {% endblock %}
+                
+        </body>
+</html>
